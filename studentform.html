@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0" />
+    <title>Student Admission Details</title>
+    <link rel="stylesheet"
+        href="style.css">
+</head>
+
+<body>
+    <div class="heading">
+        <h1> Registration Form </h1>
+    </div>
+    <div class="main_container">
+
+        <div class="form_container">
+            <form id="form">
+                <label for="">Name<span>*</span>:-</label><br /><input type="text"
+                    placeholder="Enter Your Name"
+                    id="name" /><br /><br />
+                <label for="">Mobile<span>*</span>:-</label><br /><input type="text"
+                    placeholder="Enter Your Mobile"
+                    id="mobile" /><br /><br />
+                <label for="">Email<span>*</span>:-</label><br /><input type="email"
+                    placeholder="Enter Your Email"
+                    id="email" /><br /><br />
+                <label for="">City<span>*</span>:-<br />
+                    <select id="city">
+                        <option>-----Select------</option>
+                        <option>Delhi</option>
+                        <option>Alwar</option>
+                        <option>Jaipur</option>
+                        <option>Gudgaon</option>
+                    </select></label><br /><br />
+
+                <label for="">Course<span>*</span>:-<br />
+                    <select id="course">
+                        <option>-----Select------</option>
+                        <option>HTML</option>
+                        <option>CSS</option>
+                        <option>JAVA</option>
+                        <option>REACT</option>
+                    </select></label><br /><br />
+
+                <label for="">State<span>*</span>:-<br />
+                    <select id="state">
+                        <option>-----Select------</option>
+                        <option>Rajasthan</option>
+                        <option>U.P</option>
+                        <option>Harayana</option>
+                        <option>Gujrat</option>
+                    </select></label><br /><br />
+
+                <label for="">Address<span>*</span>:-</label><br />
+                <textarea name=""
+                    id="address"></textarea><br /><br />
+                <div class="btn">
+                    <button id="btn">Submit</button>
+                    <button id="btn1">Reset</button>
+                </div>
+            </form>
+        </div>
+        <div class="image_container">
+            <img src="data:image/jpeg;base64,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"
+                alt="">
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <div id="display_data">
+
+    </div>
+</body>
+<script>
+    let arr = JSON.parse(localStorage.getItem("userData")) || [];
+    let form = document.getElementById("form");
+    function getData (event) {
+        event.preventDefault();
+        let obj = {
+            name: document.getElementById("name").value,
+            mobile: document.getElementById("mobile").value,
+            email: document.getElementById("email").value,
+            city: document.getElementById("city").value,
+            course: document.getElementById("course").value,
+            state: document.getElementById("state").value,
+            address: document.getElementById("address").value,
+        };
+        arr.push(obj);
+        localStorage.setItem("userData", JSON.stringify(arr))
+        displayData(arr)
+
+        //   console.log(arr);
+        form.reset();
+
+    }
+    let btn = document.getElementById("btn");
+    btn.addEventListener("click", getData);
+
+    function displayData (data) {
+        display_data.innerHTML = null
+        let table = document.createElement("table")
+        let thead = document.createElement("thead")
+        let tbody = document.createElement("tbody")
+        let tr = document.createElement("tr")
+        let th = document.createElement("th")
+        th.innerText = "Name"
+        let th1 = document.createElement("th")
+        th1.innerText = "Mobile"
+        let th2 = document.createElement("th")
+        th2.innerText = "Email"
+        let th3 = document.createElement("th")
+        th3.innerText = "City"
+        let th4 = document.createElement("th")
+        th4.innerText = "Course"
+        let th5 = document.createElement("th")
+        th5.innerText = "State"
+        let th6 = document.createElement("th")
+        th6.innerText = "Address"
+
+        tr.append(th, th1, th2, th3, th4, th5, th6)
+        thead.append(tr)
+        table.append(thead)
+
+
+        data.forEach(ele => {
+            let display_data = document.getElementById("display_data")
+            let tr1 = document.createElement("tr")
+            let td = document.createElement("td")
+            td.innerText = ele.name
+            let td1 = document.createElement("td")
+            td1.innerText = ele.mobile
+            let td2 = document.createElement("td")
+            td2.innerText = ele.email
+            let td3 = document.createElement("td")
+            td3.innerText = ele.city
+            let td4 = document.createElement("td")
+            td4.innerText = ele.course
+            let td5 = document.createElement("td")
+            td5.innerText = ele.state
+            let td6 = document.createElement("td")
+            td6.innerText = ele.address
+
+            tr1.append(td, td1, td2, td3, td4, td5, td6)
+            tbody.append(tr1)
+            table.append(tbody)
+            display_data.append(table)
+        })
+    }
+    displayData(arr)
+</script>
+
+</html>
